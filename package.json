@@ -16,16 +16,20 @@
     "@angular/common": "~8.2.4",
     "@angular/compiler": "~8.2.4",
     "@angular/core": "~8.2.4",
+    "@angular/fire": "^5.2.1",
     "@angular/forms": "~8.2.4",
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
+    "@angular/pwa": "^0.803.4",
     "@angular/router": "~8.2.4",
+    "@angular/service-worker": "~8.2.4",
     "@nebular/eva-icons": "4.2.2",
     "@nebular/theme": "^4.2.2",
     "eva-icons": "^1.1.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "firebase": ">= 5.5.7 <7"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.3",
@@ -47,6 +51,11 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "@angular-devkit/architect": "<0.900 || ^0.900.0-0 || ^9.0.0-0",
+    "firebase-tools": "^6.10.0",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^6.2.2",
+    "inquirer-autocomplete-prompt": "^1.0.1"
   }
 }

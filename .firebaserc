@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "instafire-app": {
+      "hosting": {
+        "myapp": [
+          "instafire-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "instafire-app"
+  }
+}
