@@ -1,16 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+
 import { AppComponent } from './app.component';
+import { BoardComponent } from './board/board.component';
+import { NbLayoutModule } from '@nebular/theme';
+import { NebularTestingModule } from './nebular-testing.module';
+import { RouterTestingModule } from '@angular/router/testing';
+import { SquareComponent } from './square/square.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [NbLayoutModule, NebularTestingModule, RouterTestingModule],
+      declarations: [AppComponent, BoardComponent, SquareComponent]
     }).compileComponents();
   }));
 
@@ -24,12 +25,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('myapp');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('myapp app is running!');
   });
 });
