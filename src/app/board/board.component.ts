@@ -33,6 +33,12 @@ export class BoardComponent implements OnInit {
     }
 
     this.winner = this.calculateWinner();
+    if(this.winner != null)
+    {
+      let x;
+      setTimeout(x,2000)
+      
+    }
   }
 
   calculateWinner() {
