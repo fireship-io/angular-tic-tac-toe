@@ -8,15 +8,16 @@
 
     main {
         display: grid;
-        grid-template-columns: 200px 200px 200px;   
-        grid-template-rows  : 200px 200px 200px;   
+        grid-template-columns: 150px 150px 150px;   
+        grid-template-rows  : 150px 150px 150px;  
+        row-gap: 5px;
+        column-gap: 5px; 
         justify-content: center;
         padding: 25px;
         
     }
     
     app-square {
-        border: 1px gray solid;
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
     }

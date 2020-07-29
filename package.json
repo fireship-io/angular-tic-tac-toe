@@ -18,6 +18,7 @@
     "@angular/core": "^8.2.14",
     "@angular/fire": "^5.4.2",
     "@angular/forms": "^8.2.14",
+    "@angular/material": "^8.2.3",
     "@angular/platform-browser": "^8.2.14",
     "@angular/platform-browser-dynamic": "^8.2.14",
     "@angular/pwa": "^0.803.29",
