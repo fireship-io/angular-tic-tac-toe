@@ -4,14 +4,15 @@
     <button class ="button" nbButton outline status="danger" (click) ="newGame()">Start new Game</button>
 </div>  
 
-<h2 *ngIf="winner">
+<h2 *ngIf="(winner) && (winner != 'draw'); else draw;">
         Player {{ winner }} won the game!
-</h2>
+</h2>   
 
-<h2 *ngIf="!winner">
+<ng-template #draw >
+    <h2 *ngIf="(winner=='draw')">
         It's a draw!
-</h2>
-
+    </h2>
+</ng-template>
 
 <main>
     

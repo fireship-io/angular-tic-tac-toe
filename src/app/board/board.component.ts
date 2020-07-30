@@ -23,8 +23,6 @@ export class BoardComponent implements OnInit {
     this.squares = Array(9).fill(null);
     this.winner = null;
     this.xIsNext = true;
-    this.draw = null;
-    this.count = 0;
   }
 
   get player() {
@@ -59,33 +57,27 @@ export class BoardComponent implements OnInit {
       [0, 4, 8],
       [2, 4, 6]
     ];
-    const draw = [
-      [0, 1, 2, 3, 4, 5, 6, 7, 8,]
-    ];
 
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       //const [d, e, f, g, h, j, k, l, m] = draw[0];
+      let x;
       if (
         (this.squares[a] &&
           this.squares[a] === this.squares[b] &&
           this.squares[a] === this.squares[c])
       ) {
+        x = 5;
+        console.log("BRUH");
         return this.squares[a];
       }
-
-      for (let k = 0; k < draw.length; k++) { //CHECK FOR DRAW!
-        if (this.squares[k] == ('X' || 'O')) {
-          this.count++;
-
-        }
-      }
     }
-    if (this.count == 16) { //DRAW CONDITION!
-      let x = 'true';
-      this.draw = 'true';
+    if ((this.squares.every(x => x != null))){
+      return 'draw';
     }
     return null;
   }
 
 }
+
+
