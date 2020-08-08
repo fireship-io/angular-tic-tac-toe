@@ -1,6 +1,6 @@
 {
-  "name": "myapp",
-  "short_name": "myapp",
+  "name": "BRX TicTacToe",
+  "short_name": "TicTacToe",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
