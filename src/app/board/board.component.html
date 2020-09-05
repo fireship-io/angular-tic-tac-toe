@@ -6,6 +6,7 @@
 <h2 *ngIf="winner">
     Player {{ winner }} won the game!
 </h2>
+<h2 *ngIf="movesCount === 9 && !winner">Draw</h2>
 
 
 <main>
